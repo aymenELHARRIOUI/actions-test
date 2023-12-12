@@ -3,6 +3,12 @@ name: run main.py
 on:
   schedule:
     - cron: '* */1 * * *'
+  workflow_dispatch: # Ajout du déclencheur pour le déclenchement manuel
+    inputs: # Optionnel : spécifiez des entrées personnalisées pour le déclenchement manuel si nécessaire
+      branch:
+        description: 'Branch to run the workflow on'
+        required: true
+        default: 'main'
 
 jobs:
   build:
