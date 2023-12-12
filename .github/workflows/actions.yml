@@ -27,8 +27,8 @@ jobs:
 
       - name: commit and push changes
         run: |
-          git config --local user.email "aymenelharrioui18@gmail.com"
-          git config --local user.name "aymenELHARRIOUI"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add -A
           git commit -m "Auto-updated logs" --allow-empty
           git push origin main
