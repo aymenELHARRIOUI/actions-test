@@ -32,5 +32,4 @@ jobs:
           git add -A
           git commit -m "Auto-updated logs" --allow-empty
           git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
